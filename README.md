@@ -2,7 +2,7 @@
 
 A one-page website for The Cliffs, a fictional luxury clifftop rental on Australia's coast. It's a practice project, built to showcase the house and send visitors to book on Airbnb.
 
-**Live site:** https://daiviksg.github.io/the-cliffs/
+**Live site:** https://daiviksg.github.io/the-cliffs-portfolio-site/
 
 ## What's in it
 
