@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Cliffs | A private clifftop house on Australia's coast</title>
+  <meta name="description" content="A private house of glass, timber and stone on a sandstone cliff above the ocean. Sleeps 6. Book your stay at The Cliffs on Airbnb." />
+  <meta name="theme-color" content="#33445A" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- Mark JS as available before first paint, so the scripted hero never flashes its no-JS state -->
+  <script>document.documentElement.classList.add("js")</script>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Cliffs | A private clifftop house" />
+  <meta property="og:description" content="Glass, timber and stone on a sandstone cliff above the ocean. Sleeps 6." />
+  <meta property="og:image" content="images/property.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Appears once you're past the hero. Desktop: links + booking. Phones: name + menu (booking bar sits at the bottom). -->
+  <header class="topbar" id="topbar" inert>
+    <nav class="topbar__links" aria-label="Sections">
+      <a href="#house">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#day">A day here</a>
+      <a href="#getting-there">Getting there</a>
+    </nav>
+    <a href="#top" class="topbar__brand">The Cliffs</a>
+    <button class="topbar__menu" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    <a class="btn btn--stone btn--sm topbar__book" data-airbnb-link="topbar" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Book on Airbnb</a>
+  </header>
+
+  <!-- Phone menu: opened from the hero nav or the top bar -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <button class="mobile-menu__close textbtn" data-menu-close>Close</button>
+    <a href="#house">The house</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#day">A day here</a>
+    <a href="#getting-there">Getting there</a>
+    <a class="btn btn--stone" data-airbnb-link="mobile-menu" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Book on Airbnb</a>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO: scroll to open ================= -->
+    <!-- Background: images/hero.jpg (the coast).  Opening card: images/property.jpg (the house). -->
+    <section class="xhero" id="top">
+      <div class="xhero__stage" data-xhero>
+        <div class="xhero__bg ph ph--dark" data-slot="hero.jpg">
+          <img src="images/hero.webp" srcset="images/hero-800.webp 800w, images/hero.webp 1672w" sizes="100vw" alt="" width="1672" height="941" fetchpriority="high" onerror="this.remove()" />
+        </div>
+
+        <header class="nav">
+          <nav class="nav__links" aria-label="Sections">
+            <a href="#house">The house</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#day">A day here</a>
+            <a href="#getting-there">Getting there</a>
+          </nav>
+          <a href="#top" class="nav__brand">The Cliffs</a>
+          <div class="nav__end">
+            <a class="btn btn--ghost btn--sm nav__book" data-airbnb-link="nav" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Book<span class="btn__more"> on Airbnb</span></a>
+            <button class="nav__menu" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+          </div>
+        </header>
+
+        <div class="xhero__media ph ph--dark" data-slot="property.jpg">
+          <img src="images/property.webp" srcset="images/property-800.webp 800w, images/property.webp 1672w" sizes="100vw" alt="The Cliffs: a single-storey house of concrete, timber and glass on a sandstone cliff above the ocean at dusk" width="1672" height="941" onerror="this.remove()" />
+          <div class="xhero__shade" aria-hidden="true"></div>
+
+          <div class="xhero__reveal">
+            <div class="xhero__copy">
+              <h1>A private house on the edge of the sea.</h1>
+              <p>Glass, timber and stone on a sandstone cliff, with nothing in front of you but ocean.</p>
+            </div>
+            <div class="xhero__act">
+              <a class="btn btn--stone" data-airbnb-link="hero" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Check dates on Airbnb</a>
+              <p class="xhero__rating">Rated <span data-fact="rating">4.98</span> by <span data-fact="reviewCount">124</span> guests</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="xhero__intro" aria-hidden="true">
+          <p class="xhero__title"><span class="xhero__l">The</span> <span class="xhero__r">Cliffs</span></p>
+          <p class="xhero__kickers"><span class="xhero__l"><span data-fact="region">Australia's coast</span></span><span class="xhero__r">Scroll to open the house</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE HOUSE ================= -->
+    <section class="strata strata--house" id="house">
+      <h2 class="strata__title">The house</h2>
+      <div class="strata__body house">
+        <div class="house__text">
+          <p class="lead" data-lines>The Cliffs sits at the end of a private road, on a sandstone headland with the ocean on three sides. Every room faces the water. There are no neighbours to see and nothing to hear but the swell below.</p>
+          <p class="house__more">It was built for slow days. Board-formed concrete holds the warmth of the afternoon sun, oak softens the light indoors, and every wall that faces the sea is glass.</p>
+          <p class="facts">Sleeps <span data-fact="guests">6</span> in <span data-fact="bedrooms">3</span> bedrooms, with <span data-fact="baths">2</span> bathrooms, a heated plunge pool and a private stretch of cliff edge.</p>
+        </div>
+        <div class="house__photo ph ph--dark" data-slot="day-main.jpg" data-open data-drift>
+          <img src="images/day-main.webp" srcset="images/day-main-800.webp 800w, images/day-main.webp 1400w" sizes="(min-width: 1024px) 45vw, 100vw" alt="The Cliffs from above, on a sandstone headland with the ocean on three sides" loading="lazy" width="1400" height="1600" onerror="this.remove()" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROOMS ================= -->
+    <section class="strata strata--rooms" id="rooms">
+      <h2 class="strata__title">Rooms</h2>
+      <div class="strata__body rooms-head">
+        <p class="rooms-head__intro">Every room faces the sea. Tap any photo to see it larger.</p>
+        <p class="more rooms-head__link"><a class="textlink" data-airbnb-link="rooms" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">See every photo on Airbnb</a></p>
+      </div>
+      <!-- Photo wall, edge to edge: the outer columns scroll past while the middle column stays pinned. -->
+      <div class="gallery gallery--bleed">
+        <div class="gallery__col">
+          <figure class="tile" style="--i:0">
+            <button class="tile__img ph" data-open data-slot="living.jpg" data-lightbox aria-label="View larger: living room">
+              <img src="images/living.webp" srcset="images/living-800.webp 800w, images/living.webp 1200w" sizes="(min-width: 768px) 34vw, 100vw" alt="Living room with a sunken lounge and open fire facing the ocean" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Living room</figcaption>
+          </figure>
+          <figure class="tile" style="--i:1">
+            <button class="tile__img ph" data-open data-slot="bath.jpg" data-lightbox aria-label="View larger: bathroom">
+              <img src="images/bath.webp" srcset="images/bath-800.webp 800w, images/bath.webp 1200w" sizes="(min-width: 768px) 34vw, 50vw" alt="Stone bathroom with a freestanding bath by the window" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Bathroom</figcaption>
+          </figure>
+          <figure class="tile" style="--i:2">
+            <button class="tile__img ph" data-open data-slot="pool.jpg" data-lightbox aria-label="View larger: plunge pool">
+              <img src="images/pool.webp" srcset="images/pool-800.webp 800w, images/pool.webp 1200w" sizes="(min-width: 768px) 34vw, 50vw" alt="Heated plunge pool meeting the ocean horizon" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Plunge pool</figcaption>
+          </figure>
+          <figure class="tile" style="--i:3">
+            <button class="tile__img ph" data-open data-slot="coast-1.jpg" data-lightbox aria-label="View larger: coastal walk">
+              <img src="images/coast-1.webp" srcset="images/coast-1-800.webp 800w, images/coast-1.webp 1100w" sizes="(min-width: 768px) 34vw, 50vw" alt="Sandstone cliffs and clear water along the coastal walk" loading="lazy" width="1100" height="1400" onerror="this.remove()" />
+            </button>
+            <figcaption>Coastal walk</figcaption>
+          </figure>
+          <figure class="tile" style="--i:4">
+            <button class="tile__img ph" data-open data-slot="day-inset.jpg" data-lightbox aria-label="View larger: fire pit">
+              <img src="images/day-inset.webp" alt="Fire pit burning on the deck at dusk" loading="lazy" width="600" height="720" onerror="this.remove()" />
+            </button>
+            <figcaption>Fire pit</figcaption>
+          </figure>
+        </div>
+        <div class="gallery__col gallery__col--stick">
+          <figure class="tile" style="--i:0">
+            <button class="tile__img ph" data-open data-slot="suite.jpg" data-lightbox aria-label="View larger: main bedroom">
+              <img src="images/suite.webp" srcset="images/suite-800.webp 800w, images/suite.webp 1200w" sizes="(min-width: 768px) 34vw, 50vw" alt="Main bedroom with linen bedding facing the sunrise" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Main bedroom</figcaption>
+          </figure>
+          <figure class="tile" style="--i:1">
+            <button class="tile__img ph" data-open data-slot="property.jpg" data-lightbox aria-label="View larger: the house">
+              <img src="images/property.webp" srcset="images/property-800.webp 800w, images/property.webp 1672w" sizes="(min-width: 768px) 34vw, 50vw" alt="The house on its sandstone cliff above the ocean at dusk" loading="lazy" width="1672" height="941" onerror="this.remove()" />
+            </button>
+            <figcaption>The house</figcaption>
+          </figure>
+          <figure class="tile" style="--i:2">
+            <button class="tile__img ph" data-open data-slot="deck.jpg" data-lightbox aria-label="View larger: deck">
+              <img src="images/deck.webp" srcset="images/deck-800.webp 800w, images/deck.webp 1200w" sizes="(min-width: 768px) 34vw, 50vw" alt="Timber deck with lounge chairs on the cliff edge" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Deck</figcaption>
+          </figure>
+        </div>
+        <div class="gallery__col">
+          <figure class="tile" style="--i:0">
+            <button class="tile__img ph" data-open data-slot="day-main.jpg" data-lightbox aria-label="View larger: from above">
+              <img src="images/day-main.webp" srcset="images/day-main-800.webp 800w, images/day-main.webp 1400w" sizes="(min-width: 768px) 34vw, 50vw" alt="The house from above, on its headland with the sea on three sides" loading="lazy" width="1400" height="1600" onerror="this.remove()" />
+            </button>
+            <figcaption>From above</figcaption>
+          </figure>
+          <figure class="tile" style="--i:1">
+            <button class="tile__img ph" data-open data-slot="dusk.jpg" data-lightbox aria-label="View larger: at dusk">
+              <img src="images/dusk.webp" srcset="images/dusk-800.webp 800w, images/dusk.webp 2400w" sizes="(min-width: 768px) 34vw, 50vw" alt="The house lit up at dusk above the ocean" loading="lazy" width="2400" height="1350" onerror="this.remove()" />
+            </button>
+            <figcaption>At dusk</figcaption>
+          </figure>
+          <figure class="tile" style="--i:2">
+            <button class="tile__img ph" data-open data-slot="coast-2.jpg" data-lightbox aria-label="View larger: the cove">
+              <img src="images/coast-2.webp" srcset="images/coast-2-800.webp 800w, images/coast-2.webp 900w" sizes="(min-width: 768px) 34vw, 50vw" alt="A quiet cove below the cliffs" loading="lazy" width="900" height="900" onerror="this.remove()" />
+            </button>
+            <figcaption>The cove</figcaption>
+          </figure>
+          <figure class="tile" style="--i:3">
+            <button class="tile__img ph" data-open data-slot="hero.jpg" data-lightbox aria-label="View larger: the coastline">
+              <img src="images/hero.webp" srcset="images/hero-800.webp 800w, images/hero.webp 1672w" sizes="(min-width: 768px) 34vw, 50vw" alt="The coastline near the house at dawn" loading="lazy" width="1672" height="941" onerror="this.remove()" />
+            </button>
+            <figcaption>The coastline</figcaption>
+          </figure>
+          <figure class="tile" style="--i:4">
+            <button class="tile__img ph" data-open data-slot="living.jpg" data-lightbox aria-label="View larger: living room">
+              <img src="images/living.webp" srcset="images/living-800.webp 800w, images/living.webp 1200w" sizes="(min-width: 768px) 34vw, 50vw" alt="Living room with the fire lit and the ocean beyond the glass" loading="lazy" width="1200" height="1500" onerror="this.remove()" />
+            </button>
+            <figcaption>Living room</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= A DAY HERE ================= -->
+    <section class="strata strata--night" id="day">
+      <div class="sky" aria-hidden="true"><i class="sky--dawn"></i><i class="sky--day"></i><i class="sky--dusk"></i><i class="sky--night"></i></div>
+      <h2 class="strata__title">A day here</h2>
+      <div class="strata__body day">
+        <ol class="day__list">
+          <li><time datetime="05:48">5:48am</time><p>The sun rises out of the sea, and you can watch it without getting out of bed.</p></li>
+          <li><time datetime="10:00">10:00am</time><p>Coffee on the deck. Between June and November, whales pass close to the headland.</p></li>
+          <li><time datetime="15:00">3:00pm</time><p>Take the coastal track down to the cove for a swim, then climb back to the heated pool.</p></li>
+          <li><time datetime="19:15">7:15pm</time><p>Light the fire pit. The sky goes pink, then deep blue, then fills with stars.</p></li>
+        </ol>
+        <div class="day__media">
+          <div class="day__main ph ph--dark" data-slot="day-main.jpg" data-open data-drift>
+            <img src="images/day-main.webp" srcset="images/day-main-800.webp 800w, images/day-main.webp 1400w" sizes="(min-width: 1024px) 45vw, 100vw" alt="The house from above, on its headland with the sea on three sides" loading="lazy" width="1400" height="1600" onerror="this.remove()" />
+          </div>
+          <div class="day__inset ph ph--dark" data-slot="day-inset.jpg">
+            <img src="images/day-inset.webp" alt="Fire pit burning on the deck at dusk" loading="lazy" width="600" height="720" onerror="this.remove()" />
+          </div>
+        </div>
+        <p class="day__cta"><a class="btn btn--stone" data-airbnb-link="day" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Check dates on Airbnb</a></p>
+      </div>
+    </section>
+
+    <!-- ================= IN THE HOUSE ================= -->
+    <section class="strata" id="amenities">
+      <h2 class="strata__title">In the house</h2>
+      <div class="strata__body">
+        <ul class="amen">
+          <li>Wood-burning fireplace</li>
+          <li>Stone bath with ocean view</li>
+          <li>Heated plunge pool</li>
+          <li>Fully equipped kitchen</li>
+          <li>King beds in linen sheets</li>
+          <li>Outdoor fire pit and loungers</li>
+          <li>Fast Wi-Fi</li>
+          <li>Private parking for two cars</li>
+          <li>Hamper of local produce on arrival</li>
+          <li>Towels, robes and beach towels</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= GUESTS SAY ================= -->
+    <!-- PLACEHOLDER REVIEWS: replace with real quotes from your Airbnb listing -->
+    <section class="strata" id="reviews" aria-label="Guest reviews">
+      <h2 class="strata__title">Guests say</h2>
+      <div class="strata__body">
+        <div class="quotes" aria-live="polite">
+          <blockquote class="quote is-active">
+            <p>“We've stayed all over the world and nothing has come close. We didn't want to leave the deck.”</p>
+            <cite>Sophie and James, from Melbourne</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“The kind of quiet you forget exists. Waking up to that view is something we won't forget.”</p>
+            <cite>Amelia, from Sydney</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Every detail had been thought about. It felt less like a rental and more like someone's home.”</p>
+            <cite>Daniel, from Singapore</cite>
+          </blockquote>
+        </div>
+        <div class="quotes__foot">
+          <p>Rated <span data-fact="rating">4.98</span> from <span data-fact="reviewCount">124</span> reviews on Airbnb</p>
+          <div class="quotes__nav">
+            <span class="quotes__count" data-quote-count>1 of 3</span>
+            <button class="textbtn" data-quote="prev">Previous</button>
+            <button class="textbtn" data-quote="next">Next review</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GETTING THERE ================= -->
+    <section class="strata" id="getting-there">
+      <h2 class="strata__title">Getting there</h2>
+      <div class="strata__body place">
+        <div>
+          <p class="lead">On the <span data-fact="region">Australian coast</span>, at the end of a private road. Close enough for a long weekend, far enough to feel remote.</p>
+          <dl class="distances">
+            <div><dt>Beach</dt><dd>5 minutes on foot</dd></div>
+            <div><dt>Coastal walking track</dt><dd>Starts at the gate</dd></div>
+            <div><dt>Village cafés</dt><dd>10 minutes by car</dd></div>
+            <div><dt>Nearest city</dt><dd>2.5 hours by car</dd></div>
+          </dl>
+          <p class="note">You'll get the exact address from Airbnb once your booking is confirmed.</p>
+        </div>
+        <div class="place__media">
+          <div class="ph place__a" data-slot="coast-1.jpg" data-open data-drift><img src="images/coast-1.webp" srcset="images/coast-1-800.webp 800w, images/coast-1.webp 1100w" sizes="(min-width: 1024px) 25vw, 55vw" alt="Sandstone cliffs and clear water along the coastal walk" loading="lazy" width="1100" height="1400" onerror="this.remove()" /></div>
+          <div class="ph place__b" data-slot="coast-2.jpg" data-open data-drift><img src="images/coast-2.webp" srcset="images/coast-2-800.webp 800w, images/coast-2.webp 900w" sizes="(min-width: 1024px) 20vw, 45vw" alt="A quiet cove below the cliffs" loading="lazy" width="900" height="900" onerror="this.remove()" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOK ================= -->
+    <section class="final" id="book">
+      <div class="final__frame">
+        <div class="final__bg ph ph--dark" data-slot="dusk.jpg">
+          <img src="images/dusk.webp" srcset="images/dusk-800.webp 800w, images/dusk.webp 2400w" sizes="100vw" alt="The Cliffs lit up at dusk above the ocean" loading="lazy" width="2400" height="1350" onerror="this.remove()" />
+        </div>
+        <div class="final__glow" aria-hidden="true"></div>
+        <div class="final__content">
+          <h2>Stay at The Cliffs</h2>
+          <p class="final__price">From <span data-fact="priceFrom">$950</span> a night</p>
+          <a class="btn btn--stone btn--lg btn--glow" data-airbnb-link="final" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Reserve on Airbnb</a>
+          <p class="final__small">You'll choose dates and pay securely on Airbnb.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__brand">The Cliffs</p>
+      <p class="footer__place"><span data-fact="region">Australian coast</span>, <span data-fact="country">Australia</span></p>
+      <nav class="footer__links" aria-label="Contact">
+        <a data-fact-href="instagramUrl" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a data-fact-mail="email" href="mailto:stay@thecliffs.example">Email us</a>
+        <a data-airbnb-link="footer" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Book on Airbnb</a>
+      </nav>
+      <p class="footer__ack">We acknowledge the Traditional Custodians of the land and sea on which The Cliffs stands, and pay our respects to Elders past and present.</p>
+      <p class="footer__copy">© <span id="year">2026</span> The Cliffs</p>
+    </div>
+  </footer>
+
+  <!-- Booking bar on phones -->
+  <div class="bookbar" id="bookbar">
+    <p>From <strong data-fact="priceFrom">$950</strong> a night</p>
+    <a class="btn btn--stone btn--sm" data-airbnb-link="sticky-bar" href="https://www.airbnb.com.au/rooms/REPLACE_WITH_LISTING_ID">Book</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo" hidden>
+    <button class="lightbox__close" aria-label="Close photo">Close</button>
+    <img alt="" />
+  </div>
+
+  <!-- Lenis: smooth, weighted scrolling (version pinned; the site falls back to normal scrolling if it fails to load) -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
